@@ -1,0 +1,126 @@
+/* Set the size of the map */
+#map {
+  height: 800px;
+}
+
+/* Style for the legend */
+.legend {
+  background-color: white;
+  padding: 3px;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  display: block; /* Always visible */
+}
+
+.legend div {
+  margin-bottom: 5px;
+}
+
+.legend span {
+  width: 30px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Optional: Adjust the legend's positioning */
+.legend {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+}
+
+/* Style for each crime item in the legend */
+.legend div {
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+/* Style the colored box next to each crime type */
+.legend span {
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  margin-right: 10px;
+  border-radius: 50%;  /* Rounded color indicator */
+}
+
+/* Add hover effect on legend items */
+.legend div:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Marker color class based on crime type (add more as needed) */
+.marker-FF0000 {
+  background-color: #FF0000;
+}
+
+.marker-FFA500 {
+  background-color: #FFA500;
+}
+
+/* Popups style */
+.leaflet-popup-content {
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 10px;
+}
+
+/* Optional: Full-screen button styling */
+.leaflet-control-fullscreen {
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.leaflet-control-fullscreen:hover {
+  background-color: #555;
+}
+
+/* Style for the crime filter container */
+.filter-container {
+  position: fixed;
+  top: 10px;
+  left: 65px;
+  background-color: rgba(216, 8, 8, 0.7); /* Transparent background */
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000; /* Ensure it appears on top of the map */
+}
+
+/* Style for the crime filter dropdown */
+#crimeFilter {
+  font-size: 14px;
+  padding: 5px;
+  width: 200px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the label */
+#crimeFilterContainer label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Style for crime markers */
+.crime-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+}
